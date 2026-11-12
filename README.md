@@ -10,7 +10,7 @@ diagrama creado en https://www.planttext.com/
 
 
 
-**El sistema fue diseñado contemplando dos perfiles:**
+El sistema fue diseñado para  dos perfiles
 Perfil Público (portal/publico`): Página de inicio donde se pueden ver  las últimas noticias publicadas
 Perfil Restringido (login/portal/admin`): Panel de administración protegido
 
@@ -24,9 +24,9 @@ Se utilizó una implementación MVC Modelo-Vista-Controlador con Spring Boot, cu
 
 ####  capas del Back End
 Se implementaron 12 entidades:
-*   Roles, Usuarios.
-*   Autores, Especialidades, Teléfonos, Emails.
-*   Temas, Publicaciones, PublicacionAutores (para relación Muchos a Muchos), Links, Archivos, Imágenes, Tags.
+   Roles, Usuarios.
+   Autores, Especialidades, Teléfonos, Emails.
+   Temas, Publicaciones, PublicacionAutores (para relación Muchos a Muchos), Links, Archivos, Imágenes, Tags.
 
 ####  Front End
 El Front End se desarrolló con el motor de plantillas Thymeleaf y Bootstrap 5
@@ -41,13 +41,12 @@ personalizado para buscar usuarios en la base de datos y se encriptaron las cont
 que genera el usuario "admin" inicial de forma automática.
 
 
-##  Tecnologías Utilizadas
-*   **Lenguaje:** Java 17
-*   **Framework:** Spring Boot 3.2.5 (Web, Data JPA, Security)
-*   **Base de Datos:** MySQL
-*   **Motor de Plantillas:** Thymeleaf + Bootstrap 5
-*   **Testing:** JUnit 5, Mockito, MockMvc
-*   **Empaquetado:** Maven
+  #### Tecnologías Utilizadas
+   Lenguaje: Java 17
+   Framework: Spring Boot  (Web, Data JPA, Security)
+   Base de Datos: MySQL
+   Plantillas: Thymeleaf + Bootstrap 5
+   Empaquetado: Maven
 
 #### Prueba (Perfil Restringido)
 El sistema crea automáticamente este usuario al iniciar por primera vez:
