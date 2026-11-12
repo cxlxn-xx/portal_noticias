@@ -4,7 +4,7 @@
 El sistema permite gestionar Usuarios, Roles, Autores, Especialidades, Temas y Publicaciones (incluyendo sus Links, Tags, Archivos e Imágenes). 
 
 
-#### Diagrama de Clases
+#### Diagrama UML
 diagrama creado en https://www.planttext.com/
 <img width="1841" height="562" alt="diagrama_portal" src="https://github.com/user-attachments/assets/4b2f4407-ad5b-4e4e-a1a0-eadeb58b3df4" />
 
