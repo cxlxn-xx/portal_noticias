@@ -1,3 +1,4 @@
+<img width="1841" height="562" alt="diagrama_portal" src="https://github.com/user-attachments/assets/1410175b-19af-4e0d-9db8-02130bc062bc" />
 # Portal de Noticias 
 
 El sistema permite gestionar Usuarios, Roles, Autores, Especialidades, Temas y Publicaciones (incluyendo sus Links, Tags, Archivos e Imágenes). 
