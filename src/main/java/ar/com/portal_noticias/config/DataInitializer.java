@@ -16,7 +16,7 @@ public class DataInitializer implements CommandLineRunner {
     private IUsuariosDao usuarioDao;
 
     @Autowired
-    private IRolesDao rolesDao; // 👈 Inyectamos el DAO de Roles
+    private IRolesDao rolesDao; 
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -31,23 +31,22 @@ public class DataInitializer implements CommandLineRunner {
             rol.setDescripcion("ADMIN");
             rol.setNivel(1);
 
-            // 👇 GUARDAMOS EL ROL PRIMERO EN LA BD
+          
             rolesDao.save(rol);
 
-            // 2. Creamos el Usuario
+            
             Usuarios admin = new Usuarios();
             admin.setUsuario("admin");
             admin.setClave(passwordEncoder.encode("admin123"));
             admin.setNombre("Administrador");
             admin.setEstado("ACTIVO");
-            admin.setRol(rol); // Ahora el rol ya existe
+            admin.setRol(rol);
 
-            // 3. Guardamos el Usuario
             usuarioDao.save(admin);
 
-            System.out.println("✅ USUARIO ADMIN CREADO EXITOSAMENTE");
-            System.out.println("👤 Usuario: admin");
-            System.out.println("🔑 Contraseña: admin123");
+            System.out.println("USUARIO ADMIN CREADO EXITOSAMENTE");
+            System.out.println(" Usuario: admin");
+            System.out.println(" Contraseña: admin123");
 
         }
     }
