@@ -17,25 +17,25 @@ public class VistaController {
     @Autowired private ITemasServices temaService;
     @Autowired private IAutoresServices autorService;
 
-    // ==========================================
-    // VISTAS PÚBLICAS
-    // ==========================================
+
+    // vistas publi
+
     @GetMapping("/publico")
     public String verPublico(Model model) {
         model.addAttribute("publicaciones", publicacionService.getAll());
         return "publico/index";
     }
 
-    // ==========================================
-    // VISTAS ADMIN (RESTRINGIDAS)
-    // ==========================================
+
+    // vista admin (RESTRINGIDAS)
+   
     @GetMapping("/admin")
     public String verAdmin(Model model) {
         model.addAttribute("publicaciones", publicacionService.getAll());
         return "admin/lista";
     }
 
-    // --- Formulario de Publicación ---
+
     @GetMapping("/admin/publicacion/form")
     public String formPublicacion(Model model) {
         model.addAttribute("publicacion", new Publicaciones());
@@ -44,7 +44,7 @@ public class VistaController {
         return "admin/publicacion-form";
     }
 
-    //  Guardar Publicación
+ 
     @PostMapping("/admin/publicacion/guardar")
     public String guardarPublicacion(@ModelAttribute Publicaciones publicacion, @RequestParam Integer idAutor) {
         Autores autor = autorService.get(idAutor);
